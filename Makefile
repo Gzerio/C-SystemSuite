@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-I. -Icore/utils -Wall
+CFLAGS=-I. -Icore/utils -Icore/menu -Wall
 LDFLAGS=-lws2_32
 
 SRC= \
@@ -27,6 +27,7 @@ SRC= \
     tools/strings.c \
     tools/decode.c \
     tools/tools_main.c \
+    tools/array_scan.c \
     main.c
 
 

@@ -12,5 +12,7 @@ void tools_fileinfo();
 void tools_hexdump();
 void tools_strings();
 void tools_decode();
+void array_scan();
+
 
 #endif

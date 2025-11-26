@@ -48,7 +48,7 @@ int http_run_server(int port) {
 
     printf("Servidor HTTP na porta %d.\n", port);
     printf("Acesse: http://localhost:%d/\n", port);
-    printf("CTRL+C para parar.\n");
+
 
     while (1) {
         client = accept(server, (struct sockaddr*)&addr, &addrlen);
@@ -107,7 +107,6 @@ void http_main() {
         if (opcao == 1) {
             ui_clear();
             ui_header("SERVIDOR HTTP");
-            printf("Servidor rodando na porta 8080.\n");
             printf("Use CTRL+C para parar.\n\n");
             http_run_server(8080);
             ui_wait_enter();

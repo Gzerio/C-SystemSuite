@@ -1,9 +1,10 @@
 #include <stdio.h>
-#include "core/login/login.h"
-#include "core/menu/menu.h"
+#include <stdlib.h>
+#include "ui.h"
+#include "menu.h"
 
 int main() {
-    login_screen();
+    ui_reset_go_root();
     menu_principal();
     return 0;
 }
